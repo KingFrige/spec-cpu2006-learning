@@ -40,6 +40,6 @@ make run-all
 reference
 ------------
 
-[1]. [SPEC CPU2006 Documentation](SPEC CPU2006 Documentation)
+[1]. [SPEC CPU2006 Documentation](https://www.spec.org/cpu2006/Docs/)
 
 [2]. [Speckle](https://github.com/ccelio/Speckle)
