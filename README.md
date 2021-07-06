@@ -4,7 +4,7 @@ README
 install
 ----------
 
-[Installing SPEC CPU2006 Under Unix](Installing SPEC CPU2006 Under Unix)
+[Installing SPEC CPU2006 Under Unix](https://www.spec.org/cpu2006/Docs/install-guide-unix.html)
 
 config
 -----------
@@ -25,6 +25,9 @@ test
 --------
 
 ```bash
+cd $SPEC
+source shrc
+
 cd <spec-cpu-learning>
 
 cat Makefile
@@ -37,5 +40,6 @@ make run-all
 reference
 ------------
 
-#. [SPEC CPU2006 Documentation](SPEC CPU2006 Documentation)
-#. [Speckle](https://github.com/ccelio/Speckle)
+[1]. [SPEC CPU2006 Documentation](SPEC CPU2006 Documentation)
+
+[2]. [Speckle](https://github.com/ccelio/Speckle)
