@@ -7,7 +7,8 @@ install
 [Installing SPEC CPU2006 Under Unix](https://www.spec.org/cpu2006/Docs/install-guide-unix.html)
 
 ```bash
-cd <spec-cpu-install-dir>
+export SPEC=<spec-cpu-install-dir>
+cd $SPEC
 
 source shrc
 ```
