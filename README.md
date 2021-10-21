@@ -10,15 +10,14 @@ install
 export SPEC=<spec-cpu-install-dir>
 cd $SPEC
 
-source shrc
+source shrc; cd -
 ```
 
 config
 -----------
 
 ```bash
-cd $SPEC/config
-cp Example-linux64-amd64-gcc43+.cfg my-linux64-amd64-gcc43+.cfg
+cp config/*.cfg $SPEC/config
 ```
 
 [SPEC CPU2006 Config Files](https://www.spec.org/cpu2006/Docs/config.html)
@@ -41,6 +40,8 @@ cat Makefile
 make run-int
 make run-fp
 make run-all
+
+make CONFIG=riscv.cfg build-int
 ```
 
 reference
