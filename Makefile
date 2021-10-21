@@ -85,8 +85,26 @@ run-int:
 run-int-set:
 	runspec --tune=base --config=$(CONFIG) int
 
+build-401:
+	runspec -c $(CONFIG) --action=build -i test 401.bzip2
+
+build-473:
+	runspec -c $(CONFIG) --action=build -i test 473.astar
+
 run-473:
 	runspec -c $(CONFIG) -i ref 473.astar
+
+onlyrun-473:
+	runspec -c $(CONFIG) --action=onlyrun -i test 473.astar
+
+setup-473:
+	runspec -c $(CONFIG) --action=setup -i test 473.astar
+
+report-473:
+	runspec -c $(CONFIG) --action=report -i test 473.astar
+
+clean-473:
+	runspec -c $(CONFIG) --action=clean -i test 473.astar
 
 run-4rate:
 	runspec -c $(CONFIG) -i ref --rate 4 int
