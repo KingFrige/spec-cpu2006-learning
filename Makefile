@@ -66,7 +66,7 @@ run-speed:
 	runspec -c $(CONFIG) -i test 473.astar
 
 run-4rate:
-	runspec -c $(CONFIG) -i test --rate 4 int
+	runspec -c $(CONFIG) -i test --rate 4 473.astar
 
 
 # iterations
@@ -106,4 +106,7 @@ run-fp:
 
 clean-all:
 	runspec -c $(CONFIG) --action=clean -I all
+
+scrub-all:
+	runspec -c $(CONFIG) --action=scrub -I all
 
