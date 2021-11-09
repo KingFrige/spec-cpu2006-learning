@@ -114,3 +114,14 @@ run-all:
 
 clean-all:
 	runspec -c $(CONFIG) --action=clean -I all
+
+build-400:
+	runspec -c $(CONFIG) --action=build -i test 400.perlbench
+
+
+
+
+
+
+
+

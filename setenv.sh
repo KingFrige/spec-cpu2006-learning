@@ -1,2 +1,2 @@
  module load riscv-toolchian/chipyard 
- module load specCPU/spec-cpu2006
+ module load spec-cpu/spec-cpu2006
